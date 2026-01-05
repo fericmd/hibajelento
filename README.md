@@ -1,2 +1,1 @@
-# hibajelento
-hibajelentoo
+ide kell beirni hogy kell hasznalni
