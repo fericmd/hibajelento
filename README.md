@@ -1,1 +1,1 @@
-ide kell beirni hogy kell hasznalni
+ide kell beirni hogy mukszik
