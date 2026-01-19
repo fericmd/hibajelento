@@ -1,0 +1,146 @@
+/* ===== Alap beállítások ===== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(135deg, #e8f5e9, #f1f8e9);
+    min-height: 100vh;
+    padding: 30px;
+    color: #2e3a2f;
+}
+
+/* ===== Cím ===== */
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #2e7d32;
+    font-weight: 600;
+}
+
+/* ===== Kártyák ===== */
+.box {
+    background: #ffffff;
+    max-width: 520px;
+    margin: 0 auto 20px auto;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== Inputok ===== */
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border-radius: 8px;
+    border: 1px solid #c8e6c9;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: #66bb6a;
+    box-shadow: 0 0 0 2px rgba(102, 187, 106, 0.2);
+}
+
+/* ===== Gombok ===== */
+button {
+    margin-top: 12px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #66bb6a, #43a047);
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 15px rgba(67, 160, 71, 0.4);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+/* ===== Táblázat ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+th {
+    background: #a5d6a7;
+    color: #1b5e20;
+    padding: 10px;
+    font-weight: 600;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #e0f2f1;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tr:hover {
+    background: #f1f8e9;
+}
+
+/* ===== Rejtés ===== */
+.hidden {
+    display: none;
+}
+
+/* ===== Mobilbarát ===== */
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+    .box {
+        padding: 15px;
+    }
+}
+button:last-child {
+    background: #c8e6c9;
+    color: #2e7d32;
+}
+textarea {
+    resize: none;
+}
+
+.status-Uj {
+    background: #eeeeee;
+}
+
+.status-Folyamatban {
+    background: #fff3cd;
+}
+
+.status-Megoldva {
+    background: #d4edda;
+}
