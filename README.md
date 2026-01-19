@@ -1,1 +1,14 @@
-ide kell beirni hogy mukszik
+CREATE DATABASE trombitarez
+CHARACTER SET utf8mb4
+COLLATE utf8mb4_hungarian_ci;
+
+USE trombitarez;
+
+CREATE TABLE hibak (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    tanar VARCHAR(100) NOT NULL,
+    gep VARCHAR(100) NOT NULL,
+    hiba TEXT NOT NULL,
+    status VARCHAR(50) NOT NULL DEFAULT 'Új',
+    datum TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
